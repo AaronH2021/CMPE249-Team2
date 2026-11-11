@@ -1,0 +1,17 @@
+diff --git a/src/cuda_blackboard_subscriber.cpp b/src/cuda_blackboard_subscriber.cpp
+index 3930e50..13afdc8 100644
+--- a/src/cuda_blackboard_subscriber.cpp
++++ b/src/cuda_blackboard_subscriber.cpp
+@@ -105,6 +105,12 @@ void CudaBlackboardSubscriber<T>::compatibleCallback(
+   const std::shared_ptr<const typename T::ros_type> & ros_msg_ptr)
+ {
+   const std::string ros_type_name = NegotiationStruct<typename T::ros_type>::supported_type_name;
++    RCLCPP_INFO(
++      node_.get_logger(),
++      "COMPATIBLE CALLBACK RECEIVED: stamp=%u.%09u, frame=%s",
++      ros_msg_ptr->header.stamp.sec,
++      ros_msg_ptr->header.stamp.nanosec,
++      ros_msg_ptr->header.frame_id.c_str());
+ 
+   if (compatible_sub_ && negotiated_sub_->get_negotiated_topic_publisher_count() > 0) {
+     negotiated_sub_->remove_compatible_subscription<typename T::ros_type>(

@@ -1,0 +1,237 @@
+diff --git a/perception/autoware_bevfusion/config/bevfusion_camera_lidar.param.yaml b/perception/autoware_bevfusion/config/bevfusion_camera_lidar.param.yaml
+index 8bf5dd6382..c3edf15d7d 100644
+--- a/perception/autoware_bevfusion/config/bevfusion_camera_lidar.param.yaml
++++ b/perception/autoware_bevfusion/config/bevfusion_camera_lidar.param.yaml
+@@ -16,9 +16,9 @@
+     image_backbone_trt_precision: fp16
+ 
+     # pre-process params
+-    densification_num_past_frames: 1
++    densification_num_past_frames: 0
+     densification_world_frame_id: map
+-    run_image_undistortion: true
++    run_image_undistortion: false
+ 
+     # post-process params
+     circle_nms_dist_threshold: 0.5
+diff --git a/perception/autoware_bevfusion/config/bevfusion_lidar.param.yaml b/perception/autoware_bevfusion/config/bevfusion_lidar.param.yaml
+index 1161afb08d..47d6c3b427 100644
+--- a/perception/autoware_bevfusion/config/bevfusion_lidar.param.yaml
++++ b/perception/autoware_bevfusion/config/bevfusion_lidar.param.yaml
+@@ -16,7 +16,7 @@
+     image_backbone_trt_precision: ""
+ 
+     # pre-process params
+-    densification_num_past_frames: 1
++    densification_num_past_frames: 0
+     densification_world_frame_id: map
+     run_image_undistortion: false
+ 
+diff --git a/perception/autoware_bevfusion/src/bevfusion_node.cpp b/perception/autoware_bevfusion/src/bevfusion_node.cpp
+index dfd0aec498..d80e048d3e 100644
+--- a/perception/autoware_bevfusion/src/bevfusion_node.cpp
++++ b/perception/autoware_bevfusion/src/bevfusion_node.cpp
+@@ -268,9 +268,69 @@ void BEVFusionNode::cloudCallback(
+     objects_pub_->get_subscription_count() + objects_pub_->get_intra_process_subscription_count();
+ 
+   lidar_frame_ = pc_msg_ptr->header.frame_id;
+-  if (objects_sub_count < 1 || !checkSensorFusionReadiness()) {
+-    return;
++
++  // Retry missing camera extrinsics now that the LiDAR frame is known.
++  if (sensor_fusion_) {
++    for (std::size_t camera_id = 0; camera_id < camera_data_ptrs_.size(); ++camera_id) {
++      if (lidar2camera_extrinsics_[camera_id].has_value()) {
++        continue;
++      }
++
++      const auto camera_info = camera_data_ptrs_[camera_id]->camera_info();
++      if (!camera_info.has_value()) {
++        continue;
++      }
++
++      try {
++        const auto transform_stamped = tf_buffer_.lookupTransform(
++          camera_info->header.frame_id, *lidar_frame_, camera_info->header.stamp);
++
++        const Eigen::Matrix4f lidar2camera_transform =
++          tf2::transformToEigen(transform_stamped.transform).matrix().cast<float>();
++
++        lidar2camera_extrinsics_[camera_id] = lidar2camera_transform.eval();
++
++        RCLCPP_INFO(
++          this->get_logger(),
++          "TF RETRY SUCCESS: camera_id=%zu, target=%s, source=%s",
++          camera_id, camera_info->header.frame_id.c_str(), lidar_frame_->c_str());
++      } catch (const tf2::TransformException & ex) {
++        RCLCPP_WARN(
++          this->get_logger(),
++          "TF RETRY FAILED: camera_id=%zu, error=%s",
++          camera_id, ex.what());
++      }
++    }
++
++    const std::size_t num_valid_extrinsics = std::count_if(
++      lidar2camera_extrinsics_.begin(), lidar2camera_extrinsics_.end(),
++      [](const auto & opt) { return opt.has_value(); });
++
++    extrinsics_available_ = num_valid_extrinsics == lidar2camera_extrinsics_.size();
+   }
++  
++  const bool fusion_ready = checkSensorFusionReadiness();
++  RCLCPP_INFO(
++  this->get_logger(),
++  "FUSION READINESS: extrinsics=%s, images=%s, intrinsics=%s",
++  extrinsics_available_ ? "true" : "false",
++  images_available_ ? "true" : "false",
++  intrinsics_available_ ? "true" : "false");
++
++  RCLCPP_INFO(
++    this->get_logger(),
++    "CLOUD CALLBACK: stamp=%d.%09u, frame=%s, subscribers=%zu, fusion_ready=%s",
++    pc_msg_ptr->header.stamp.sec,
++    pc_msg_ptr->header.stamp.nanosec,
++    lidar_frame_->c_str(), objects_sub_count,
++    fusion_ready ? "true" : "false");
++  if (objects_sub_count < 1 || !fusion_ready) {
++     RCLCPP_WARN(
++      this->get_logger(),
++      "SKIPPING CLOUD: subscribers=%zu, fusion_ready=%s",
++      objects_sub_count, fusion_ready ? "true" : "false");
++   return;
++   }
+ 
+   if (stop_watch_ptr_) {
+     stop_watch_ptr_->toc("processing/total", true);
+@@ -289,6 +349,13 @@ void BEVFusionNode::cloudCallback(
+   const bool is_success = detector_ptr_->detect(
+     pc_msg_ptr, camera_data_ptrs_, camera_masks_, tf_buffer_, det_boxes3d, proc_timing,
+     is_num_voxels_within_range);
++  
++  RCLCPP_INFO(
++    this->get_logger(),
++    "DETECT RESULT: input_stamp=%d.%09u, success=%s, boxes=%zu",
++    pc_msg_ptr->header.stamp.sec,
++    pc_msg_ptr->header.stamp.nanosec,
++    is_success ? "true" : "false", det_boxes3d.size());
+ 
+   if (!is_success) {
+     RCLCPP_ERROR_THROTTLE(
+@@ -328,6 +395,11 @@ void BEVFusionNode::cloudCallback(
+ void BEVFusionNode::imageCallback(
+   const sensor_msgs::msg::Image::ConstSharedPtr msg, std::size_t camera_id)
+ {
++  RCLCPP_INFO(
++    this->get_logger(), "IMAGE CALLBACK: camera_id=%zu, frame=%s, encoding=%s, %ux%u",
++    camera_id, msg->header.frame_id.c_str(), msg->encoding.c_str(),
++    msg->width, msg->height);
++
+   camera_data_ptrs_[camera_id]->update_image_msg(msg);
+ 
+   std::size_t num_valid_images = std::count_if(
+@@ -337,9 +409,14 @@ void BEVFusionNode::imageCallback(
+   images_available_ = num_valid_images == camera_data_ptrs_.size();
+ }
+ 
++
+ void BEVFusionNode::cameraInfoCallback(
+   const sensor_msgs::msg::CameraInfo & msg, std::size_t camera_id)
+ {
++  RCLCPP_INFO(
++    this->get_logger(), "CAMERA INFO CALLBACK: camera_id=%zu, frame=%s",
++    camera_id, msg.header.frame_id.c_str());
++
+   camera_data_ptrs_[camera_id]->update_camera_info(msg);
+   std::size_t num_valid_intrinsics = std::count_if(
+     camera_data_ptrs_.begin(), camera_data_ptrs_.end(),
+@@ -355,8 +432,17 @@ void BEVFusionNode::cameraInfoCallback(
+ 
+   try {
+     geometry_msgs::msg::TransformStamped transform_stamped;
++    RCLCPP_INFO(
++  	this->get_logger(),
++  	"TF LOOKUP ATTEMPT: camera_id=%zu, target=%s, source=%s, stamp=%d.%09u",
++  	camera_id, msg.header.frame_id.c_str(), lidar_frame_->c_str(),
++  	msg.header.stamp.sec, msg.header.stamp.nanosec);
+     transform_stamped =
+       tf_buffer_.lookupTransform(msg.header.frame_id, *lidar_frame_, msg.header.stamp);
++     RCLCPP_INFO(
++  	this->get_logger(),
++  	"TF LOOKUP SUCCESS: camera_id=%zu, target=%s, source=%s",
++  	camera_id, msg.header.frame_id.c_str(), lidar_frame_->c_str());
+ 
+     Eigen::Matrix4f lidar2camera_transform =
+       tf2::transformToEigen(transform_stamped.transform).matrix().cast<float>();
+diff --git a/perception/autoware_bevfusion/src/bevfusion_node_utils.cpp b/perception/autoware_bevfusion/src/bevfusion_node_utils.cpp
+index 73fd49fce7..285462cc1b 100644
+--- a/perception/autoware_bevfusion/src/bevfusion_node_utils.cpp
++++ b/perception/autoware_bevfusion/src/bevfusion_node_utils.cpp
+@@ -22,6 +22,9 @@
+ #include <string>
+ #include <unordered_map>
+ #include <vector>
++#include <iomanip>
++#include <sstream>
++#include <cmath>
+ 
+ // Contains implementations of functions other than constructor,destructor, topic callbacks for
+ // BEVFusionNode Separated to reduce code complexity of bevfusion_node.cpp
+@@ -141,11 +144,31 @@ void BEVFusionNode::precomputeIntrinsicsExtrinsics()
+ void BEVFusionNode::computeCameraMasks(double lidar_stamp)
+ {
+   camera_masks_.resize(camera_data_ptrs_.size());
++
++  std::stringstream sync_report;
++  sync_report << std::fixed << std::setprecision(3);
++  sync_report << "CAMERA SYNC: lidar_stamp=" << lidar_stamp;
++
+   for (std::size_t i = 0; i < camera_masks_.size(); ++i) {
+-    auto camera_mask_timestamp = rclcpp::Time(camera_data_ptrs_[i]->image_msg()->header.stamp);
++    const auto image_msg = camera_data_ptrs_[i]->image_msg();
++
++    const double camera_stamp =
++      rclcpp::Time(image_msg->header.stamp).seconds();
++
++    const double delta_ms = (camera_stamp - lidar_stamp) * 1000.0;
++
+     camera_masks_[i] =
+-      (lidar_stamp - camera_mask_timestamp.seconds()) < max_camera_lidar_delay_ ? 1.0 : 0.f;
++      std::abs(lidar_stamp - camera_stamp) <= max_camera_lidar_delay_
++        ? 1.0
++        : 0.f;
++
++    sync_report << " | camera" << i
++                << "=" << camera_stamp
++                << " delta_ms=" << delta_ms
++                << " mask=" << camera_masks_[i];
+   }
++
++  RCLCPP_INFO(this->get_logger(), "%s", sync_report.str().c_str());
+ }
+ 
+ void BEVFusionNode::publishDetectionResults(
+@@ -156,10 +179,23 @@ void BEVFusionNode::publishDetectionResults(
+     objects_pub_->get_subscription_count() + objects_pub_->get_intra_process_subscription_count();
+ 
+   if (objects_sub_count > 0) {
++    RCLCPP_INFO(
++      this->get_logger(),
++      "DETECTION PUBLISH: stamp=%d.%09u, objects=%zu, subscribers=%zu",
++      output_msg.header.stamp.sec,
++      output_msg.header.stamp.nanosec,
++      output_msg.objects.size(),
++      objects_sub_count);
++
+     objects_pub_->publish(output_msg);
+     published_time_pub_->publish_if_subscribed(objects_pub_, output_msg.header.stamp);
++  } else {
++    RCLCPP_WARN(
++      this->get_logger(),
++      "DETECTION NOT PUBLISHED: stamp=%d.%09u, no subscribers",
++      output_msg.header.stamp.sec,
++      output_msg.header.stamp.nanosec);
+   }
+-
+   diagnostics_detector_trt_->publish(header.stamp);
+ }
+ 
