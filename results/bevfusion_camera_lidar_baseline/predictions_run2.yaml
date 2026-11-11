@@ -1,0 +1,6678 @@
+---
+header:
+  stamp:
+    sec: 1532402927
+    nanosec: 647951000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.5107421875
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.420000076293945
+          y: 14.704999923706055
+          z: 0.187255859375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7027643734211997
+          w: 0.7114226840984961
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 7.698424339294434
+      y: 1.7887964248657227
+      z: 2.5312442779541016
+- existence_probability: 0.431640625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 9.180000305175781
+          y: -19.21000099182129
+          z: -1.7548828125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6793607958367259
+          w: 0.7338044079181388
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.307819128036499
+      y: 1.360180139541626
+      z: 1.284652590751648
+- existence_probability: 0.380615234375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.16999976336956024
+          z: -0.89794921875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7102087883199106
+          w: 0.7039911057628245
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.056246519088745
+      y: 1.3183318376541138
+      z: 1.300430417060852
+- existence_probability: 0.219970703125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 3.1449997425079346
+          y: 39.525001525878906
+          z: -0.1292724609375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7036539698725026
+          w: 0.7105428141095139
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.7583935260772705
+      y: 1.1942163705825806
+      z: 1.0379332304000854
+- existence_probability: 0.1370849609375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 9.010000228881836
+          y: 17.764999389648438
+          z: -0.97900390625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.6984932496091257
+          w: 0.7156166433576594
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.720937490463257
+      y: 1.217027187347412
+      z: 1.0307363271713257
+- existence_probability: 0.127685546875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 8.585000038146973
+          y: 11.899999618530273
+          z: -1.162109375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.5152298370494216
+          w: 0.857052049186061
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.71032977104187
+      y: 1.2567331790924072
+      z: 1.067487359046936
+- existence_probability: 0.1026611328125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 6.204999923706055
+          y: 34.5099983215332
+          z: -0.279296875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7321700460081426
+          w: 0.6811218861029459
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.7369275093078613
+      y: 1.1337018013000488
+      z: 1.0683999061584473
+---
+header:
+  stamp:
+    sec: 1532402928
+    nanosec: 147847000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.64794921875
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.420000076293945
+          y: 10.96500015258789
+          z: 0.2335205078125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7077049443081057
+          w: 0.7065081116320329
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 9.000370025634766
+      y: 1.7068814039230347
+      z: 2.417689800262451
+- existence_probability: 0.348388671875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.2549997568130493
+          z: -0.83837890625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7092121723066931
+          w: 0.7049951025730756
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.5314857959747314
+      y: 1.3106298446655273
+      z: 1.3007478713989258
+- existence_probability: 0.165283203125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 8.84000015258789
+          y: -28.645000457763672
+          z: -2.14453125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.7384042733111583
+          w: 0.6743583091768204
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.3272576332092285
+      y: 1.3397465944290161
+      z: 1.2706161737442017
+- existence_probability: 0.1123046875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -1.8700002431869507
+          y: 35.189998626708984
+          z: -0.0528564453125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6995716882945098
+          w: 0.7145624206021257
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.1348397731781006
+      y: 1.183910846710205
+      z: 1.1280419826507568
+- existence_probability: 0.1019287109375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.6800002455711365
+          y: -19.295000076293945
+          z: -1.48828125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7336119851747026
+          w: 0.6795685802095561
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.0952937602996826
+      y: 1.2641184329986572
+      z: 1.3151172399520874
+---
+header:
+  stamp:
+    sec: 1532402928
+    nanosec: 698048000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.76953125
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.420000076293945
+          y: 5.864999771118164
+          z: 0.0042724609375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7204539767986167
+          w: 0.6935027522043862
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.672492980957031
+      y: 1.6657140254974365
+      z: 2.347886562347412
+- existence_probability: 0.437255859375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 6.375
+          y: 26.18000030517578
+          z: -0.65234375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7212282048441019
+          w: 0.6926975361132406
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.0206401348114014
+      y: 1.3228455781936646
+      z: 1.261651873588562
+- existence_probability: 0.419921875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.08500023931264877
+          y: 0.2549997568130493
+          z: -0.86083984375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7212985558599311
+          w: 0.6926242800497091
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.8296499252319336
+      y: 1.409537672996521
+      z: 1.3581891059875488
+- existence_probability: 0.314453125
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.2100002765655518
+          y: 7.394999980926514
+          z: -0.60546875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.954255727226982
+          w: 0.298991650476236
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5279932022094727
+      y: 0.45850449800491333
+      z: 1.048758864402771
+- existence_probability: 0.1705322265625
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.42500025033950806
+          y: -24.649999618530273
+          z: -1.3916015625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.22058736116127606
+          w: 0.9753672211510416
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5193000435829163
+      y: 0.4551585912704468
+      z: 1.0880101919174194
+- existence_probability: 0.1470947265625
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.0400002002716064
+          y: 34.935001373291016
+          z: 0.1063232421875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7294018650526282
+          w: 0.6840854619546798
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 7.232000350952148
+      y: 1.6358908414840698
+      z: 2.0249931812286377
+- existence_probability: 0.140625
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -3.1450002193450928
+          y: -22.440000534057617
+          z: -1.3544921875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.8334409117109872
+          w: 0.5526085836162503
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5213325023651123
+      y: 0.4763038754463196
+      z: 1.0459461212158203
+- existence_probability: 0.12188720703125
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -3.315000295639038
+          y: -31.704999923706055
+          z: -1.4072265625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7243433536312252
+          w: 0.6894394143434721
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5965444445610046
+      y: 0.46368277072906494
+      z: 1.0563393831253052
+- existence_probability: 0.104248046875
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.7650002241134644
+          y: -22.780000686645508
+          z: -1.509765625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9323973494694701
+          w: 0.36143489414043434
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5122485160827637
+      y: 0.47746819257736206
+      z: 1.0514507293701172
+- existence_probability: 0.1024169921875
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.42500025033950806
+          y: -23.970001220703125
+          z: -1.3720703125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.3085756581396288
+          w: 0.9511998019363203
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5097534656524658
+      y: 0.47607138752937317
+      z: 1.0621581077575684
+---
+header:
+  stamp:
+    sec: 1532402929
+    nanosec: 197353000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.70703125
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.505000114440918
+          y: 1.8699997663497925
+          z: -0.1348876953125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7076238756571344
+          w: 0.7065893082972431
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.791875839233398
+      y: 1.7792143821716309
+      z: 2.496872663497925
+- existence_probability: 0.58642578125
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.2950003147125244
+          y: 3.3999998569488525
+          z: -0.62744140625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9960742217069417
+          w: 0.08852200207242435
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.612333357334137
+      y: 0.5137515068054199
+      z: 1.1674071550369263
+- existence_probability: 0.410888671875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.384185791015625e-07
+          y: 0.16999976336956024
+          z: -0.77197265625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7019778149840121
+          w: 0.7121988116181268
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.4801323413848877
+      y: 1.2713918685913086
+      z: 1.3013832569122314
+- existence_probability: 0.252197265625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 6.460000038146973
+          y: 23.290000915527344
+          z: -0.62451171875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7160486920073623
+          w: 0.6980503353444832
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.904921293258667
+      y: 1.2874783277511597
+      z: 1.1540881395339966
+- existence_probability: 0.20458984375
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.4650001525878906
+          y: -26.690000534057617
+          z: -1.4638671875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.8647614901450337
+          w: 0.5021828005439264
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.6881287693977356
+      y: 0.5223518013954163
+      z: 1.2204488515853882
+- existence_probability: 0.1671142578125
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.2549997568130493
+          y: -28.39000129699707
+          z: -1.6865234375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.9908547182024102
+          w: 0.13493304790162464
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5352614521980286
+      y: 0.4833323657512665
+      z: 1.1603035926818848
+- existence_probability: 0.15966796875
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -0.3400002419948578
+          y: -26.60500144958496
+          z: -1.685546875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9972291890201307
+          w: 0.07439048706825695
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5208236575126648
+      y: 0.4883138835430145
+      z: 1.1402249336242676
+- existence_probability: 0.14697265625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -1.700000286102295
+          y: 31.364999771118164
+          z: -0.6533203125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7236260809931935
+          w: 0.6901922159126631
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.571105480194092
+      y: 1.1834774017333984
+      z: 1.0600855350494385
+---
+header:
+  stamp:
+    sec: 1532402929
+    nanosec: 697797000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.77001953125
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.420000076293945
+          y: -1.785000205039978
+          z: -0.1710205078125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7110818302555277
+          w: 0.7031092594187968
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.554730415344238
+      y: 1.7244737148284912
+      z: 2.455763101577759
+- existence_probability: 0.57861328125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 6.62999963760376
+          y: 20.399999618530273
+          z: -0.421875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6974319747029843
+          w: 0.7166509894376033
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.812797784805298
+      y: 1.3151172399520874
+      z: 1.2118386030197144
+- existence_probability: 0.51025390625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.16999976336956024
+          z: -0.82861328125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7081433536143058
+          w: 0.7060686869787416
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.548771619796753
+      y: 1.29947829246521
+      z: 1.289995551109314
+- existence_probability: 0.310546875
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.2950003147125244
+          y: -0.5100002288818359
+          z: -0.82275390625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9247964615566009
+          w: 0.38046222505314553
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.46368277072906494
+      y: 0.47746819257736206
+      z: 1.0755970478057861
+- existence_probability: 0.1441650390625
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 8.670000076293945
+          y: 36.6349983215332
+          z: 0.3076171875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6977085924908749
+          w: 0.7163816859498868
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 5.833819389343262
+      y: 1.7227903604507446
+      z: 2.0358991622924805
+---
+header:
+  stamp:
+    sec: 1532402930
+    nanosec: 152601000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.6474609375
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.505000114440918
+          y: -5.270000457763672
+          z: -0.25634765625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6888777149082337
+          w: 0.7248775716649055
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 9.195829391479492
+      y: 1.839281439781189
+      z: 2.586214780807495
+- existence_probability: 0.486083984375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 6.884999752044678
+          y: 18.44499969482422
+          z: -0.46728515625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7034035855896931
+          w: 0.7107906835205167
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.8182971477508545
+      y: 1.2426984310150146
+      z: 1.175414800643921
+- existence_probability: 0.412353515625
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.2950003147125244
+          y: -3.825000286102295
+          z: -0.77880859375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9693117341778136
+          w: 0.24583482663202894
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5647968649864197
+      y: 0.4868853688240051
+      z: 1.1392511129379272
+- existence_probability: 0.2919921875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.2549997568130493
+          z: -0.86279296875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7117216052289203
+          w: 0.7024616406967494
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.125669002532959
+      y: 1.29472815990448
+      z: 1.2553532123565674
+- existence_probability: 0.179443359375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 9.010000228881836
+          y: 33.31999969482422
+          z: -0.2509765625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7102335869128704
+          w: 0.7039660872661965
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.766486644744873
+      y: 1.2007944583892822
+      z: 1.1486068964004517
+---
+header:
+  stamp:
+    sec: 1532402930
+    nanosec: 648325000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.75146484375
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.505000114440918
+          y: -9.095000267028809
+          z: -0.2027587890625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.695560792428343
+          w: 0.7184672463212609
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.930327415466309
+      y: 1.9032342433929443
+      z: 2.6918654441833496
+- existence_probability: 0.50537109375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 7.224999904632568
+          y: 17.170000076293945
+          z: -0.56640625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7129654904992313
+          w: 0.7011991224732035
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.125669002532959
+      y: 1.3578577041625977
+      z: 1.2601126432418823
+- existence_probability: 0.398681640625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.384185791015625e-07
+          y: 0.2549997568130493
+          z: -0.89208984375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6872992808038342
+          w: 0.7263743515615982
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.1625137329101562
+      y: 1.3397465944290161
+      z: 1.245736002922058
+- existence_probability: 0.360595703125
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.4650001525878906
+          y: -7.650000095367432
+          z: -0.77685546875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9821863824105466
+          w: 0.18790931378535655
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5394595265388489
+      y: 0.4868853688240051
+      z: 1.1528209447860718
+- existence_probability: 0.232421875
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -6.885000228881836
+          y: 22.014999389648438
+          z: -0.4072265625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7139746783787786
+          w: 0.7001715208675083
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.5132500529289246
+      y: 0.4902251064777374
+      z: 1.0752032995224
+- existence_probability: 0.1678466796875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 9.6899995803833
+          y: 31.790000915527344
+          z: -0.4189453125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.9834472256196033
+          w: 0.18119479689302634
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 2.7691893577575684
+      y: 1.2097692489624023
+      z: 1.0994924306869507
+---
+header:
+  stamp:
+    sec: 1532402931
+    nanosec: 198511000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.65087890625
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.590000152587891
+          y: -13.09000015258789
+          z: -0.3525390625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6967576548812949
+          w: 0.7173066083372704
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 9.000370025634766
+      y: 1.8178532123565674
+      z: 2.657907247543335
+- existence_probability: 0.499755859375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 7.649999618530273
+          y: 16.235000610351562
+          z: -0.466796875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6998797708520995
+          w: 0.7142606711502549
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.202918767929077
+      y: 1.3273746967315674
+      z: 1.322199821472168
+- existence_probability: 0.4306640625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.2549997568130493
+          z: -0.87744140625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6924900762456315
+          w: 0.7214274005756363
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.125669002532959
+      y: 1.2645814418792725
+      z: 1.2038766145706177
+- existence_probability: 0.2327880859375
+  classification:
+  - label: 7
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -2.4650001525878906
+          y: -11.730000495910645
+          z: -0.90478515625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.9782389706251602
+          w: 0.20748136386246108
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 0
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 0.4793369174003601
+      y: 0.44374731183052063
+      z: 1.0973470211029053
+---
+header:
+  stamp:
+    sec: 1532402931
+    nanosec: 697833000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.6572265625
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.505000114440918
+          y: -16.575000762939453
+          z: -0.4150390625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7126619522417283
+          w: 0.7015076206478504
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.405668258666992
+      y: 1.6649008989334106
+      z: 2.316004991531372
+- existence_probability: 0.362548828125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 8.15999984741211
+          y: 15.555000305175781
+          z: -0.64404296875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6931389302292088
+          w: 0.7208040117817798
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.2629024982452393
+      y: 1.442611575126648
+      z: 1.4539262056350708
+- existence_probability: 0.305908203125
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -3.06000018119812
+          y: 23.1200008392334
+          z: -0.2266845703125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.8196445518291067
+          w: 0.5728724191797532
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.580099582672119
+      y: 1.5435454845428467
+      z: 1.512213110923767
+- existence_probability: 0.296630859375
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.2549997568130493
+          z: -0.91259765625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.7178918752823754
+          w: 0.6961546203276642
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.1409685611724854
+      y: 1.3469618558883667
+      z: 1.251680850982666
+- existence_probability: 0.1217041015625
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 13.175000190734863
+          y: 31.875
+          z: 0.0802001953125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: -0.6448157798008097
+          w: 0.7643380208519485
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.0473055839538574
+      y: 1.2361925840377808
+      z: 1.2439125776290894
+---
+header:
+  stamp:
+    sec: 1532402932
+    nanosec: 197715000
+  frame_id: lidar_top
+objects:
+- existence_probability: 0.69482421875
+  classification:
+  - label: 2
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -4.760000228881836
+          y: -19.55000114440918
+          z: -0.53173828125
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6859271556335678
+          w: 0.7276702118160694
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 8.774721145629883
+      y: 1.7227903604507446
+      z: 2.391857624053955
+- existence_probability: 0.5654296875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: -3.6550002098083496
+          y: 21.420000076293945
+          z: -0.2454833984375
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.8523578494743037
+          w: 0.5229589816032804
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 4.072662353515625
+      y: 1.5356520414352417
+      z: 1.5759117603302002
+- existence_probability: 0.496826171875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 8.670000076293945
+          y: 15.300000190734863
+          z: -0.51171875
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6780104575480407
+          w: 0.7350522562753593
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.2724759578704834
+      y: 1.3678394556045532
+      z: 1.2565797567367554
+- existence_probability: 0.39794921875
+  classification:
+  - label: 1
+    probability: 1.0
+  kinematics:
+    pose_with_covariance:
+      pose:
+        position:
+          x: 0.08499976247549057
+          y: 0.2549997568130493
+          z: -0.87353515625
+        orientation:
+          x: 0.0
+          y: 0.0
+          z: 0.6880292814268516
+          w: 0.7256829251809982
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_position_covariance: false
+    orientation_availability: 1
+    twist_with_covariance:
+      twist:
+        linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      covariance:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    has_twist: false
+    has_twist_covariance: false
+  shape:
+    type: 0
+    footprint:
+      points: []
+    dimensions:
+      x: 3.150184154510498
+      y: 1.2944121360778809
+      z: 1.2065247297286987
