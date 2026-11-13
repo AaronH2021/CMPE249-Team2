@@ -1,5 +1,18 @@
-
 #!/usr/bin/env python3
+"""Replay a nuScenes Mini scene through Autoware BEVFusion and record results.
+
+For each of the first NUM_SAMPLES keyframes of scene 0 this node:
+
+  1. publishes the six camera images + CameraInfo for that sample,
+  2. waits until they have actually gone out and BEVFusion has cached them,
+  3. publishes the matching LiDAR sweep (this triggers BEVFusion inference),
+  4. waits for a DetectedObjects message whose header stamp equals the LiDAR
+     stamp, and writes it to YAML plus a per-frame status row to CSV.
+
+Frames are processed strictly one at a time so every detection can be tied
+to exactly one input sample. Each run writes to a new, timestamped folder
+under ~/nuscenes_bevfusion/sequence_runs/.
+"""
 
 import csv
 import time
@@ -24,6 +37,9 @@ from rosidl_runtime_py.convert import message_to_ordereddict
 from nuscenes.nuscenes import NuScenes
 
 
+# (nuScenes channel name, Autoware camera id, TF optical frame).
+# The list order defines BEVFusion's camera_id 0-5 and must match both the
+# BEVFusion launch configuration and the frames in publish_camera_tf.py.
 CAMERAS = [
     ("CAM_FRONT", "camera0", "cam_front_optical_frame"),
     ("CAM_FRONT_RIGHT", "camera1", "cam_front_right_optical_frame"),
@@ -43,8 +59,14 @@ CAMERA_SETTLE_SECONDS = 1.0
 
 # Maximum time to wait for a detection with the matching LiDAR timestamp.
 DETECTION_TIMEOUT_SECONDS = 10.0
+
+# Maximum time to wait for BEVFusion to subscribe to the LiDAR topic.
 LIDAR_SUBSCRIBER_TIMEOUT_SECONDS = 10.0
+
+# After the last sample, keep listening this long for late detections.
 FINAL_DETECTION_GRACE_SECONDS = 10.0
+
+# Bounds for the cache of detections that arrive before we expect them.
 DETECTION_CACHE_MAX_ENTRIES = 10
 DETECTION_CACHE_TTL_SECONDS = 30.0
 
@@ -70,6 +92,8 @@ class NuScenesSequencePublisher(Node):
             / "sequence_runs"
             / f"scene0061_{run_timestamp}"
         )
+        # exist_ok=False and open(..., "x") below both raise instead of
+        # silently overwriting results from an earlier run.
         self.output_dir.mkdir(parents=True, exist_ok=False)
 
         self.predictions_path = (
@@ -138,6 +162,11 @@ class NuScenesSequencePublisher(Node):
                 )
             )
 
+            # Subscribe to our *own* camera topics as a delivery check:
+            # hearing a message back confirms it actually went out over
+            # DDS before we move on to publishing the LiDAR cloud.
+            # (i=index binds the loop value; a bare lambda would capture
+            # only the final index.)
             self.camera_subscriptions.append(
                 self.create_subscription(
                     Image,
@@ -163,6 +192,8 @@ class NuScenesSequencePublisher(Node):
             10,
         )
 
+        # Autoware XYZIRC point layout (16 bytes per point) expected by
+        # BEVFusion on /sensing/lidar/concatenated/pointcloud.
         self.fields = [
             PointField(
                 name="x", offset=0,
@@ -191,6 +222,8 @@ class NuScenesSequencePublisher(Node):
         ]
 
         # Follow the actual scene chain rather than assuming sample order.
+        # nuScenes samples form a linked list: scene.first_sample_token ->
+        # sample.next -> ... -> "" (empty string at the end of the scene).
         scene = self.nusc.scene[0]
         self.scene_name = scene["name"]
 
@@ -206,6 +239,9 @@ class NuScenesSequencePublisher(Node):
         self.sample_tokens = self.sample_tokens[:NUM_SAMPLES]
 
         # Map each exact LiDAR timestamp to its original sample.
+        # BEVFusion copies the input cloud's header stamp onto its output,
+        # so the LiDAR stamp (converted from us to ns to match ROS
+        # sec/nanosec) is the key that ties a detection to its sample.
         self.sample_by_timestamp = {}
         self.completed_timestamps = set()
         self.timed_out_timestamps = set()
@@ -244,8 +280,19 @@ class NuScenesSequencePublisher(Node):
         self.detection_cache = {}
         self.late_detection_count = 0
 
+        # Per-sample state machine, advanced by process_sequence():
+        #
+        #   PUBLISH_CAMERAS -> load sample, publish 6 images + CameraInfo
+        #   WAIT_CAMERA     -> wait until all 6 are echoed back, settle,
+        #                      then publish the LiDAR cloud
+        #   WAIT_RESULT     -> wait for the detection with the same stamp
+        #   (then back to PUBLISH_CAMERAS for the next sample)
+        #
+        # Cameras go first because BEVFusion only runs inference when a
+        # point cloud arrives, using whatever images it has cached.
         self.state = "PUBLISH_CAMERAS"
         self.state_start_time = time.monotonic()
+        self.camera_ready_time = None
         self.result_received = False
         self.finished = False
         self.finalizing = False
@@ -256,6 +303,8 @@ class NuScenesSequencePublisher(Node):
         self.timeout_count = 0
         self.serialization_error_count = 0
 
+        # Drive the state machine by polling every 20 ms instead of
+        # blocking, so ROS callbacks keep running in between.
         self.timer = self.create_timer(
             0.02, self.process_sequence
         )
@@ -279,6 +328,7 @@ class NuScenesSequencePublisher(Node):
 
     @staticmethod
     def make_stamp(timestamp_us):
+        """Convert a nuScenes microsecond timestamp to a ROS Time stamp."""
         seconds, microseconds = divmod(
             timestamp_us, 1_000_000
         )
@@ -307,6 +357,11 @@ class NuScenesSequencePublisher(Node):
         return value
 
     def camera_image_callback(self, msg, camera_index):
+        """Mark a camera image as delivered if its stamp matches this sample.
+
+        Stale messages from a previous sample are ignored by the exact
+        timestamp comparison.
+        """
         if self.state != "WAIT_CAMERA":
             return
 
@@ -323,6 +378,7 @@ class NuScenesSequencePublisher(Node):
             self.camera_image_received[camera_index] = True
 
     def camera_info_callback(self, msg, camera_index):
+        """Same delivery check as camera_image_callback, for CameraInfo."""
         if self.state != "WAIT_CAMERA":
             return
 
@@ -339,6 +395,11 @@ class NuScenesSequencePublisher(Node):
             self.camera_info_received[camera_index] = True
 
     def prepare_sample(self):
+        """Load the LiDAR sweep and build all ROS messages for one sample.
+
+        Everything is prepared up front so publishing later is fast and
+        all six cameras go out back-to-back.
+        """
         token = self.sample_tokens[self.sample_index]
         sample = self.nusc.get("sample", token)
 
@@ -349,6 +410,7 @@ class NuScenesSequencePublisher(Node):
 
         lidar_path = self.dataroot / lidar_data["filename"]
 
+        # 5 float32 values per point: x, y, z, intensity, ring index.
         points = np.fromfile(
             lidar_path, dtype=np.float32
         ).reshape(-1, 5)
@@ -384,6 +446,9 @@ class NuScenesSequencePublisher(Node):
                     "do not match nuScenes metadata"
                 )
 
+            # Each camera keeps its own capture time, which differs from the
+            # LiDAR time by tens of ms. BEVFusion uses that gap to decide
+            # whether to mask a camera out (see computeCameraMasks).
             header = Header()
             header.stamp = self.make_stamp(camera_data["timestamp"])
             camera_timestamps_ns.append(
@@ -401,6 +466,12 @@ class NuScenesSequencePublisher(Node):
             image_msg.step = width * 3
             image_msg.data = image_bytes
 
+            # CameraInfo from the nuScenes 3x3 intrinsic matrix K:
+            #   k = K flattened row-major
+            #   r = identity (monocular, no rectification rotation)
+            #   p = [K | 0], the 3x4 projection with no stereo baseline
+            #   d = [] because nuScenes images are already undistorted
+            #       (the patch sets run_image_undistortion: false).
             intrinsic = calibration["camera_intrinsic"]
 
             info_msg = CameraInfo()
@@ -455,6 +526,7 @@ class NuScenesSequencePublisher(Node):
         }
 
     def publish_cameras(self):
+        """Publish all six images + CameraInfo and enter WAIT_CAMERA."""
         self.camera_image_received = [False] * len(CAMERAS)
         self.camera_info_received = [False] * len(CAMERAS)
 
@@ -478,8 +550,15 @@ class NuScenesSequencePublisher(Node):
         self.camera_ready_time = None
 
     def publish_lidar(self):
+        """Publish the LiDAR cloud, which triggers BEVFusion inference.
+
+        Records the expected output stamp, enters WAIT_RESULT, then checks
+        whether the detection for this stamp is already in the cache.
+        """
         points = self.current_sample["points"]
 
+        # Repack to XYZIRC: intensity clamped to UINT8, return_type is
+        # unknown in nuScenes (0), ring index becomes the channel.
         packed_points = [
             (
                 float(x),
@@ -529,6 +608,8 @@ class NuScenesSequencePublisher(Node):
 
         self.cleanup_detection_cache()
 
+        # Handle the case where the detection was received and cached
+        # before this sample reached WAIT_RESULT.
         cached_entry = self.detection_cache.pop(
             self.expected_lidar_timestamp_ns, None
         )
@@ -557,6 +638,10 @@ class NuScenesSequencePublisher(Node):
         wait_seconds=None,
         error="",
     ):
+        """Append one row for the current sample to the frame-status CSV.
+
+        Flushed immediately so results survive a crash or Ctrl-C.
+        """
         if self.current_sample is None:
             return
 
@@ -604,6 +689,7 @@ class NuScenesSequencePublisher(Node):
         self.status_file.flush()
 
     def advance_sample(self):
+        """Reset per-sample state and go back to PUBLISH_CAMERAS."""
         self.sample_index += 1
         self.current_sample = None
         self.expected_lidar_timestamp_ns = None
@@ -643,6 +729,15 @@ class NuScenesSequencePublisher(Node):
             )
 
     def detection_callback(self, msg):
+        """Match a BEVFusion detection to its sample by LiDAR timestamp.
+
+        Four cases:
+          * stamp not in this sequence, or already saved -> ignore
+          * stamp is the sample we are waiting on       -> save as success
+          * stamp belongs to a sample that timed out    -> save as late_success
+          * stamp published but not yet awaited         -> cache it for
+                                                           publish_lidar()
+        """
         self.cleanup_detection_cache()
 
         output_timestamp_ns = (
@@ -755,10 +850,17 @@ class NuScenesSequencePublisher(Node):
         self.cleanup_detection_cache()
 
     def process_sequence(self):
+        """Timer callback (every 20 ms) that advances the state machine.
+
+        Every wait has a timeout, so a dropped message is recorded in the
+        status CSV instead of stalling the whole run.
+        """
         if self.finished:
             return
 
         if self.state == "PUBLISH_CAMERAS":
+            # All samples done: keep spinning for a grace period so late
+            # detections for timed-out samples can still be recorded.
             if self.sample_index >= len(self.sample_tokens):
                 if not self.finalizing:
                     self.finalizing = True
@@ -801,6 +903,9 @@ class NuScenesSequencePublisher(Node):
                     time.monotonic() - self.camera_ready_time
                 )
 
+                # The settle delay gives BEVFusion's own callbacks time to
+                # cache the images. Checking for a LiDAR subscriber avoids
+                # publishing a cloud that nobody receives.
                 if settle_elapsed >= CAMERA_SETTLE_SECONDS:
                     subscriber_count = (
                         self.lidar_publisher.get_subscription_count()

@@ -1,5 +1,11 @@
-
 #!/usr/bin/env python3
+"""Single-frame LiDAR smoke test for BEVFusion.
+
+Republishes the first nuScenes Mini LiDAR sweep once per second, always with
+the same original timestamp. Useful for checking that BEVFusion is wired up;
+for real evaluation use ``publish_nuscenes_sequence.py``, which also
+publishes cameras and records the detections.
+"""
 
 import numpy as np
 import rclpy
@@ -39,10 +45,14 @@ class NuScenesLidarPublisher(Node):
         # Preserve the original nuScenes LiDAR timestamp.
         self.timestamp_us = lidar_data["timestamp"]
 
+        # nuScenes .pcd.bin files are flat float32 arrays with 5 values per
+        # point: x, y, z, intensity (0-255), ring index (0-31).
         self.points = np.fromfile(
             self.scan_path, dtype=np.float32
         ).reshape(-1, 5)
 
+        # Autoware's XYZIRC point layout (16 bytes per point), which is what
+        # BEVFusion's preprocessing expects on the concatenated cloud topic.
         self.fields = [
             PointField(name="x", offset=0,
                        datatype=PointField.FLOAT32, count=1),
@@ -58,6 +68,8 @@ class NuScenesLidarPublisher(Node):
                        datatype=PointField.UINT16, count=1),
         ]
 
+        # Republish the same frame every second so a late-starting
+        # BEVFusion node still receives it.
         self.timer = self.create_timer(1.0, self.publish_scan)
 
         self.get_logger().info(
@@ -68,6 +80,11 @@ class NuScenesLidarPublisher(Node):
         )
 
     def publish_scan(self):
+        """Convert the nuScenes sweep to XYZIRC and publish it.
+
+        Intensity is clamped into UINT8 range, return_type is unknown in
+        nuScenes so it is set to 0, and the ring index becomes ``channel``.
+        """
         packed_points = [
             (
                 float(x),
@@ -94,6 +111,12 @@ class NuScenesLidarPublisher(Node):
         )
 
     def _make_header(self):
+        """Build a header stamped with the original nuScenes time.
+
+        nuScenes stores timestamps in microseconds; ROS splits time into
+        whole seconds plus nanoseconds. Keeping the dataset time (instead
+        of "now") lets the output detections be matched back to the sample.
+        """
         header = Header()
 
         timestamp_sec, timestamp_remainder_us = divmod(

@@ -1,5 +1,10 @@
-
 #!/usr/bin/env python3
+"""Broadcast static TF transforms from ``lidar_top`` to the six nuScenes cameras.
+
+BEVFusion looks up ``camera_optical_frame <- lidar_top`` for every camera to
+build its lidar-to-camera extrinsic matrices. Without these transforms the
+node never reports fusion readiness and skips every point cloud.
+"""
 
 import rclpy
 
@@ -12,11 +17,21 @@ class NuScenesCameraTFPublisher(Node):
     def __init__(self):
         super().__init__("nuscenes_camera_tf_publisher")
 
+        # A *static* broadcaster publishes on the latched /tf_static topic,
+        # so the transforms are sent once and nodes that start later
+        # (e.g. BEVFusion) still receive them.
         self.broadcaster = StaticTransformBroadcaster(self)
 
-        # Transform: lidar_top -> camera optical frame
-        # Translation and quaternion values calculated from
-        # the first nuScenes Mini sample's calibrated_sensor records.
+        # Transform: lidar_top (parent) -> camera optical frame (child).
+        # Values come from the first nuScenes Mini sample's calibrated_sensor
+        # records, computed as inv(T_ego<-lidar) * T_ego<-camera, i.e. the
+        # camera pose expressed in the LiDAR frame.
+        #
+        # Each entry: (child_frame, [tx, ty, tz] in metres,
+        #              [qx, qy, qz, qw] quaternion -- ROS order, w last).
+        #
+        # These are only valid for the nuScenes vehicle calibration; a
+        # different dataset or vehicle needs new values.
         camera_transforms = [
             (
                 "cam_front_optical_frame",
@@ -76,6 +91,7 @@ class NuScenesCameraTFPublisher(Node):
 
             transforms.append(transform)
 
+        # Send all six in one call; static transforms never need re-sending.
         self.broadcaster.sendTransform(transforms)
 
         self.get_logger().info(
