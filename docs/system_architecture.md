@@ -253,7 +253,7 @@ Timeouts	0
 Late detections	0
 Serialization errors	0
 Predicted objects per run	59
-Average publisher-observed detection wait	169.7 ms
+Average publisher-observed detection wait	167.1 ms
 
 The detection wait is measured by the sequence publisher. It is not
 an isolated measurement of neural-network inference latency.

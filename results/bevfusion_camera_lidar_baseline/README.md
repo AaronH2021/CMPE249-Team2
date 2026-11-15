@@ -20,7 +20,7 @@
 
 - Late detections: 0
 - Serialization errors: 0
-- Average publisher-observed detection wait: 169.7 ms
+- Average publisher-observed detection wait: 167.1 ms
 
 ## Configuration Notes
 - Camera settling interval: 1.0 second

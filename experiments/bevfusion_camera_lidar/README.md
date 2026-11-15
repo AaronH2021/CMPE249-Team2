@@ -171,9 +171,9 @@ scene-0061 across three consecutive runs.
 | Serialization errors | 0 |
 | Predicted objects per run | 59 |
 | Average predicted objects per frame | 5.9 |
-| Average publisher-observed detection wait | Approximately 169.7 ms |
+| Average publisher-observed detection wait | 167.1 ms (median 126.3 ms) |
 
-The 169.7 ms measurement is the publisher-observed wait for detection
+The 167.1 ms measurement is the publisher-observed wait for detection
 messages. It is not an isolated neural-network inference latency measurement.
 
 These results demonstrate repeatable runtime integration on the tested
