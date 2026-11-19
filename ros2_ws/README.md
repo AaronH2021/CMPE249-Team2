@@ -92,4 +92,3 @@ Reproducibility Notes
 - CUDA, TensorRT, ROS 2, and Autoware dependencies must be installed separately.
 - Model configuration and dataset preprocessing must also be configured for the target environment.
 - The patches document the modifications used in this project; they do not independently guarantee identical results on different hardware or software environments.
-  EOF
